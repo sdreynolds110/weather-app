@@ -8,14 +8,21 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+header {
+    text-align: center;
+    font-style: italic;
+    font-size: 30px;
+    background: navy;
+    color: white;
+}
 .input {
     text-align: center;
     margin: 100px;
 }
 
-.searchValue {
+.inputValue {
     height: 50px;
-    width: 600px;
+    width: 300px;
     background: lightgray;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
