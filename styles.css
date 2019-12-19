@@ -10,11 +10,11 @@
       font-size: 40px;
   }
   .forecastCards {
-    height: 125px;
+    height: 135px;
     margin-left: 2em;  
     margin-top: 1em;
     padding-left: 2em; 
-    padding-top: 2em; 
+    padding-top: 1em; 
     border-style: solid;
     border-color: black; 
     border-radius: 5px; 
@@ -29,10 +29,10 @@
   .searchDiv {
     color: white;
     height: 100%;
-    width: 15em;
+    width: 14.1em;
     position: fixed;
     z-index: 1;
-    top: 0;
+    top: 10px;
     left: 0;
     background-color: darkslateblue;
     margin-top: 50px;
@@ -42,6 +42,8 @@
   #row1 {
     display: flex;
     flex-direction: row;
+    padding-top: .05em;
+    padding-left: .5em;
   }
   
   #previousCity {
@@ -57,19 +59,19 @@
   
   .searchBox {
     display: inline-block;
-    margin-left: .5em;
+    margin-left: .2em;
     font-size: 1.3em;
     font-size: 15px; 
   }
   
-  .weatherReport {
+  .weatherForecast {
     display: inline-block;
     padding-left: 0;
     height: 11em;
     width: 50em;
     font-size: 1.5em;
-    border-style: double;
-    border-color: lightgrey;
+    border-style: solid;
+    border-color: black;
   }
   
   .wind,
