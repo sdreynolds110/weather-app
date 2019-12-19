@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
     <title>5 Day Forecast</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
@@ -19,8 +18,7 @@
         <span class="searchBox"></span>
         <input type="text" id="City" class="searchBox" placeholder="City, County, or State"></input>
         <button class="searchBtn" type="submit"><i class="fa fa-search"></i></button>
-        <table id="previousCity">
-        </table>
+        <table id="previousCity"></table>
     </div>
     <div class="offset-sm-2 col-sm-10 weatherForecast container">
         <div id="row1">
@@ -39,7 +37,7 @@
     </div>
     </div>
         <div class="offset-sm-2 col-sm-10 weatherReport container">
-            <div class="col-sm-12">5-Day Forecast:
+            <div class="future col-sm-12">5-Day Forecast:
             </div>
             <div class="row">
                 <div class="forecastCards col-sm-2">

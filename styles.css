@@ -26,6 +26,10 @@
     width: 20em;
   }
   
+  .row {
+      padding-left: 10px;
+  }
+  
   .searchDiv {
     color: white;
     height: 100%;
@@ -44,6 +48,13 @@
     flex-direction: row;
     padding-top: .05em;
     padding-left: .5em;
+  }
+
+  .future {
+      font-size: 30px;
+      background-color: salmon;
+      color: white;
+      text-align: center;
   }
   
   #previousCity {
