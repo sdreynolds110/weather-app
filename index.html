@@ -14,87 +14,100 @@
 <body>
     <div class="heading">What It's Like In Your Neck of the Woods</div>
     <div id="searchDiv" class="searchDiv">
-        <span class="searchBox">City, County, or State</span>
-        <input type="text" id="userCity" class="searchBox"></input>
+        <span class="searchBox"></span>
+        <input type="text" id="City" class="searchBox" placeholder="City, County, or State"></input>
         <button class="searchBtn" type="submit"><i class="fa fa-search"></i></button>
         <table id="previousCity">
         </table>
     </div>
     <div class="offset-sm-2 col-sm-10 weatherReport container">
         <div id="row1">
-            <div id="currentCityLbl"></div>
+            <div id="currentCity"></div>
             <div id="displayMoment"></div>
             <div id="currentIcon"></div>
         </div>
-        <div class="temp col-sm-12">Temperature: <label id="currentTempLbl"></label>°F
+        <div class="temp col-sm-12">Temperature: <label id="currentTemp"></label>°F
         </div>
-        <div class="humid col-sm-12">Humidity: <label id="currentHumLbl"></label>%
+        <div class="humid col-sm-12">Humidity: <label id="currentHumid"></label>%
         </div>
-        <div class="wind col-sm-12">Wind Speed: <label id="currentWindLbl"></label>MPH
+        <div class="wind col-sm-12">Wind Speed: <label id="currentWind"></label>MPH
         </div>
-        <div class="UV col-sm-12">UV Index: <label id="currentUVLbl"></label>
+        <div class="UV col-sm-12">UV Index: <label id="currentUV"></label>
         </div>
     </div>
     </div>
-    <div class="offset-sm-2 col-sm-10 weatherReport container">
-        <div class="col-sm-12">5-Day Forecast:
-        </div>
-        <div class="row">
-            <div class="forecastCards col-sm-2">
-                <div class="row">
-                    <label id="weatherOneTime"></label></div>
-                <div class="row">
-                    <div id="dayOneIcon"></div>
-                </div>
-                <div class="row">
-                    Temp: <label id="weatherOneTemp"></label>°F</div>
-                <div class="row">
-                    Humidity: <label id="weatherOneHum"></label>%</div>
-
+        <div class="offset-sm-2 col-sm-10 weatherReport container">
+            <div class="col-sm-12">5-Day Forecast:
             </div>
+            <div class="row">
+                <div class="forecastCards col-sm-2">
+                    <div class="row">
+                        <label id="dayOneTime"></label></div>
+                    <div class="row">
+                        <div id="dayOneIcon"></div>
+                    </div>
+                    <div class="row">
+                        Temp: <label id="dayOneTemp"></label>°F
+                    </div>
+                    <div class="row">
+                        Humidity: <label id="dayOneHumid"></label>%
+                    </div>
+                </div>
             <div class="forecastCards col-sm-2">
                 <div class="row">
-                    <label id="weatherTwoTime"></label></div>
+                    <label id="dayTwoTime"></label>
+                </div>
                 <div class="row">
                     <div id="dayTwoIcon"></div>
                 </div>
                 <div class="row">
-                    Temp: <label id="weatherTwoTemp"></label>°F</div>
+                    Temp: <label id="dayTwoTemp"></label>°F
+                </div>
                 <div class="row">
-                    Humidity: <label id="weatherTwoHum"></label>%</div>
+                    Humidity: <label id="dayTwoHumid"></label>%
+                </div>
             </div>
             <div class="forecastCards col-sm-2">
                 <div class="row">
-                    <label id="weatherThreeTime"></label></div>
+                    <label id="dayThreeTime"></label>
+                </div>
                 <div class="row">
                     <div id="dayThreeIcon"></div>
                 </div>
                 <div class="row">
-                    Temp: <label id="weatherThreeTemp"></label>°F</div>
+                    Temp: <label id="dayThreeTemp"></label>°F
+                </div>
                 <div class="row">
-                    Humidity: <label id="weatherThreeHum"></label>%</div>
+                    Humidity: <label id="dayThreeHumid"></label>%
+                </div>
             </div>
             <div class="forecastCards col-sm-2">
                 <div class="row">
-                    <label id="weatherFourTime"></label></div>
+                    <label id="dayFourTime"></label>
+                </div>
                 <div class="row">
                     <div id="dayFourIcon"></div>
                 </div>
                 <div class="row">
-                    Temp: <label id="weatherFourTemp"></label>°F</div>
+                    Temp: <label id="dayFourTemp"></label>°F
+                </div>
                 <div class="row">
-                    Humidity: <label id="weatherFourHum"></label>%</div>
+                    Humidity: <label id="dayFourHum"></label>%
+                </div>
             </div>
             <div class="forecastCards col-sm-2">
                 <div class="row">
-                    <label id="weatherFiveTime"></label></div>
+                    <label id="dayFiveTime"></label>
+                </div>
                 <div class="row">
                     <div id="dayFiveIcon"></div>
                 </div>
                 <div class="row">
-                    Temp: <label id="weatherFiveTemp"></label>°F</div>
+                    Temp: <label id="dayFiveTemp"></label>°F
+                </div>
                 <div class="row">
-                    Humidity: <label id="weatherFiveHum"></label>%</div>
+                    Humidity: <label id="dayFiveHumid"></label>%
+                </div>
             </div>
         </div>
     </div>

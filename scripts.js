@@ -8,15 +8,13 @@ $(document).ready(function() {
       var NowMoment = moment().format('L');
       var eDisplayMoment = document.getElementById("displayMoment");
       eDisplayMoment.innerHTML = NowMoment;
-      var userCity = $("#userCity").val();
+      var userCity = $("#City").val();
       localStorage.setItem(userCity, userCity);
       $("#previousCity" ).append("<tr><td> " + userCity + " </td></tr>");
-      $("#currentCityLbl" ).text(userCity);
+      $("#currentCity" ).text(userCity);
       $.ajax({
         url:
-          "http://api.openweathermap.org/data/2.5/weather?q=" +
-          userCity +
-          "&units=imperial&appid=c0364544656115d0bb71b2442947f757"
+          "http://api.openweathermap.org/data/2.5/weather?q=" + userCity + "&units=imperial&appid=c0364544656115d0bb71b2442947f757"
       }).done(function(html) {
         var currentWeather = html.weather[0].main 
         if (currentWeather === "Clouds") {
@@ -36,26 +34,21 @@ $(document).ready(function() {
         }
   
   
-        $("#currentTempLbl").text(html.main.temp);
-        $("#currentHumLbl").text(html.main.humidity);
-        $("#currentWindLbl").text(html.wind.speed);
+        $("#currentTemp").text(html.main.temp);
+        $("#currentHumid").text(html.main.humidity);
+        $("#currentWind").text(html.wind.speed);
         var lat = html.coord.lat;
         var lon = html.coord.lon;
         $.ajax({
           url:
-            "http://api.openweathermap.org/data/2.5/uvi?&appid=c0364544656115d0bb71b2442947f757&lat=" +
-            lat +
-            "&lon=" +
-            lon
+            "http://api.openweathermap.org/data/2.5/uvi?&appid=c0364544656115d0bb71b2442947f757&lat=" + lat + "&lon=" + lon
         }).done(function(html) {
-          $("#currentUVLbl").text(html.value);
+          $("#currentUV").text(html.value);
         });
       });
       $.ajax({
         url:
-          "http://api.openweathermap.org/data/2.5/forecast?&appid=c0364544656115d0bb71b2442947f757&q=" +
-          userCity +
-          "&units=imperial&mode=JSON"
+          "http://api.openweathermap.org/data/2.5/forecast?&appid=c0364544656115d0bb71b2442947f757&q=" + userCity + "&units=imperial&mode=JSON"
       }).done(function(html) {
         var currentDayOne = html.list[4].weather[0].main
         var currentDayTwo = html.list[12].weather[0].main
@@ -63,21 +56,21 @@ $(document).ready(function() {
         var currentDayFour = html.list[28].weather[0].main
         var currentDayFive = html.list[36].weather[0].main
         console.log(html.list[36].weather[0].main)
-        $("#weatherOneTime").text(moment(html.list[4].dt_txt).format('L'));
-        $("#weatherOneTemp").text(html.list[4].main.temp);
-        $("#weatherOneHum").text(html.list[4].main.humidity);
-        $("#weatherTwoTime").text(moment(html.list[12].dt_txt).format('L'));
-        $("#weatherTwoTemp").text(html.list[12].main.temp);
-        $("#weatherTwoHum").text(html.list[12].main.humidity);
-        $("#weatherThreeTime").text(moment(html.list[20].dt_txt).format('L'));
-        $("#weatherThreeTemp").text(html.list[20].main.temp);
-        $("#weatherThreeHum").text(html.list[20].main.humidity);
-        $("#weatherFourTime").text(moment(html.list[28].dt_txt).format('L'));
-        $("#weatherFourTemp").text(html.list[28].main.temp);
-        $("#weatherFourHum").text(html.list[28].main.humidity);
-        $("#weatherFiveTime").text(moment(html.list[36].dt_txt).format('L'));
-        $("#weatherFiveTemp").text(html.list[36].main.temp);
-        $("#weatherFiveHum").text(html.list[36].main.humidity);
+        $("#dayOneTime").text(moment(html.list[4].dt_txt).format('L'));
+        $("#dayOneTemp").text(html.list[4].main.temp);
+        $("#dayOneHumid").text(html.list[4].main.humidity);
+        $("#dayTwoTime").text(moment(html.list[12].dt_txt).format('L'));
+        $("#dayTwoTemp").text(html.list[12].main.temp);
+        $("#dayTwoHumid").text(html.list[12].main.humidity);
+        $("#dayThreeTime").text(moment(html.list[20].dt_txt).format('L'));
+        $("#dayThreeTemp").text(html.list[20].main.temp);
+        $("#dayThreeHumid").text(html.list[20].main.humidity);
+        $("#dayFourTime").text(moment(html.list[28].dt_txt).format('L'));
+        $("#dayFourTemp").text(html.list[28].main.temp);
+        $("#dayFourHumid").text(html.list[28].main.humidity);
+        $("#dayFiveTime").text(moment(html.list[36].dt_txt).format('L'));
+        $("#dayFiveTemp").text(html.list[36].main.temp);
+        $("#dayFiveHumid").text(html.list[36].main.humidity);
   
         if (currentDayOne === "Clouds") {
           $("#dayOneIcon").append("<i></i>").addClass('fas fa-cloud-sun');
