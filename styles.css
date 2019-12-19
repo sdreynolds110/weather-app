@@ -9,27 +9,17 @@
       text-align: center;
       font-size: 40px;
   }
-  .weatherBox {
-    height: 150px;
+  .forecastCards {
+    height: 125px;
     margin-left: 2em;  
     margin-top: 1em;
     padding-left: 2em; 
     padding-top: 2em; 
     border-style: solid;
-    border-color: grey; 
+    border-color: black; 
     border-radius: 5px; 
-    font-size: 16px;
-    background-color: lightskyblue;
-  }
-  
-  .navbar {
-    text-align: center;
-    color: white;
-  }
-  
-  .navbar-brand {
-    width: 100%;
-    text-align: center;
+    font-size: 15px;
+    background-color: lightgray;
   }
   
   .cityRow {
@@ -82,10 +72,10 @@
     border-color: lightgrey;
   }
   
-  .cityWind,
-  .cityTemp,
-  .cityUV,
-  .cityHum {
+  .wind,
+  .temp,
+  .UV,
+  .humid {
     font-size: 0.8em;
     margin: 0.4em;
     font-style: bold;

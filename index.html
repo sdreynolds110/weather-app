@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>5 Day Forcast</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href='https://fonts.googleapis.com/css?family=Alegreya Sans' rel='stylesheet'>
+    <title>5 Day Forecast</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -29,13 +26,13 @@
             <div id="displayMoment"></div>
             <div id="currentIcon"></div>
         </div>
-        <div class="cityTemp col-sm-12">Temperature: <label id="currentTempLbl"></label>°F
+        <div class="temp col-sm-12">Temperature: <label id="currentTempLbl"></label>°F
         </div>
-        <div class="cityHum col-sm-12">Humidity: <label id="currentHumLbl"></label>%
+        <div class="humid col-sm-12">Humidity: <label id="currentHumLbl"></label>%
         </div>
-        <div class="cityWind col-sm-12">Wind Speed: <label id="currentWindLbl"></label>MPH
+        <div class="wind col-sm-12">Wind Speed: <label id="currentWindLbl"></label>MPH
         </div>
-        <div class="cityUV col-sm-12">UV Index: <label id="currentUVLbl"></label>
+        <div class="UV col-sm-12">UV Index: <label id="currentUVLbl"></label>
         </div>
     </div>
     </div>
@@ -43,7 +40,7 @@
         <div class="col-sm-12">5-Day Forecast:
         </div>
         <div class="row">
-            <div class="weatherBox col-sm-2">
+            <div class="forecastCards col-sm-2">
                 <div class="row">
                     <label id="weatherOneTime"></label></div>
                 <div class="row">
@@ -55,7 +52,7 @@
                     Humidity: <label id="weatherOneHum"></label>%</div>
 
             </div>
-            <div class="weatherBox col-sm-2">
+            <div class="forecastCards col-sm-2">
                 <div class="row">
                     <label id="weatherTwoTime"></label></div>
                 <div class="row">
@@ -66,7 +63,7 @@
                 <div class="row">
                     Humidity: <label id="weatherTwoHum"></label>%</div>
             </div>
-            <div class="weatherBox col-sm-2">
+            <div class="forecastCards col-sm-2">
                 <div class="row">
                     <label id="weatherThreeTime"></label></div>
                 <div class="row">
@@ -77,7 +74,7 @@
                 <div class="row">
                     Humidity: <label id="weatherThreeHum"></label>%</div>
             </div>
-            <div class="weatherBox col-sm-2">
+            <div class="forecastCards col-sm-2">
                 <div class="row">
                     <label id="weatherFourTime"></label></div>
                 <div class="row">
@@ -88,7 +85,7 @@
                 <div class="row">
                     Humidity: <label id="weatherFourHum"></label>%</div>
             </div>
-            <div class="weatherBox col-sm-2">
+            <div class="forecastCards col-sm-2">
                 <div class="row">
                     <label id="weatherFiveTime"></label></div>
                 <div class="row">
