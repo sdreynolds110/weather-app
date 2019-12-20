@@ -24,7 +24,7 @@ $(document).ready(function() {
           $("#currentIcon").append("<i></i>").addClass('fas fa-cloud-rain');
         }
         else if (currentWeather === "Snow") {
-          $("#currentIcon").append("<i></i>").addClass('fas fa-sun');
+          $("#currentIcon").append("<i></i>").addClass('fas fa-snowflake');
         }
         else if (currentWeather === "Thunderstorm") {
           $("#currentIcon").append("<i></i>").addClass('fas fa-bolt');
@@ -56,19 +56,19 @@ $(document).ready(function() {
         var currentDayFour = html.list[28].weather[0].main
         var currentDayFive = html.list[36].weather[0].main
         console.log(html.list[36].weather[0].main)
-        $("#dayOneTime").text(moment(html.list[4].dt_txt).format('L'));
+        $("#dayOneDate").text(moment(html.list[4].dt_txt).format('L'));
         $("#dayOneTemp").text(html.list[4].main.temp);
         $("#dayOneHumid").text(html.list[4].main.humidity);
-        $("#dayTwoTime").text(moment(html.list[12].dt_txt).format('L'));
+        $("#dayTwoDate").text(moment(html.list[12].dt_txt).format('L'));
         $("#dayTwoTemp").text(html.list[12].main.temp);
         $("#dayTwoHumid").text(html.list[12].main.humidity);
-        $("#dayThreeTime").text(moment(html.list[20].dt_txt).format('L'));
+        $("#dayThreeDate").text(moment(html.list[20].dt_txt).format('L'));
         $("#dayThreeTemp").text(html.list[20].main.temp);
         $("#dayThreeHumid").text(html.list[20].main.humidity);
-        $("#dayFourTime").text(moment(html.list[28].dt_txt).format('L'));
+        $("#dayFourDate").text(moment(html.list[28].dt_txt).format('L'));
         $("#dayFourTemp").text(html.list[28].main.temp);
         $("#dayFourHumid").text(html.list[28].main.humidity);
-        $("#dayFiveTime").text(moment(html.list[36].dt_txt).format('L'));
+        $("#dayFiveDate").text(moment(html.list[36].dt_txt).format('L'));
         $("#dayFiveTemp").text(html.list[36].main.temp);
         $("#dayFiveHumid").text(html.list[36].main.humidity);
   
@@ -79,7 +79,7 @@ $(document).ready(function() {
           $("#dayOneIcon").append("<i></i>").addClass('fas fa-cloud-rain');
         }
         else if (currentDayOne === "Snow") {
-          $("#dayOneIcon").append("<i></i>").addClass('fas fa-sun');
+          $("#dayOneIcon").append("<i></i>").addClass('fas fa-snowflake');
         }
         else if (currentDayOne === "Thunderstorm") {
           $("#dayOneIcon").append("<i></i>").addClass('fas fa-bolt');
@@ -95,7 +95,7 @@ $(document).ready(function() {
           $("#dayTwoIcon").append("<i></i>").addClass('fas fa-cloud-rain');
         }
         else if (currentDayTwo === "Snow") {
-          $("#dayTwoIcon").append("<i></i>").addClass('fas fa-sun');
+          $("#dayTwoIcon").append("<i></i>").addClass('fas fa-snowflake');
         }
         else if (currentDayTwo === "Thunderstorm") {
           $("#dayTwoIcon").append("<i></i>").addClass('fas fa-bolt');
@@ -111,7 +111,7 @@ $(document).ready(function() {
           $("#dayThreeIcon").append("<i></i>").addClass('fas fa-cloud-rain');
         }
         else if (currentDayThree === "Snow") {
-          $("#dayThreeIcon").append("<i></i>").addClass('fas fa-sun');
+          $("#dayThreeIcon").append("<i></i>").addClass('fas fa-snowflake');
         }
         else if (currentDayThree === "Thunderstorm") {
           $("#dayThreeIcon").append("<i></i>").addClass('fas fa-bolt');
@@ -127,7 +127,7 @@ $(document).ready(function() {
           $("#dayFourIcon").append("<i></i>").addClass('fas fa-cloud-rain');
         }
         else if (currentDayFour === "Snow") {
-          $("#dayFourIcon").append("<i></i>").addClass('fas fa-sun');
+          $("#dayFourIcon").append("<i></i>").addClass('fas fa-snowflake');
         }
         else if (currentDayFour === "Thunderstorm") {
           $("#dayFourIcon").append("<i></i>").addClass('fas fa-bolt');
@@ -143,7 +143,7 @@ $(document).ready(function() {
           $("#dayFiveIcon").append("<i></i>").addClass('fas fa-cloud-rain');
         }
         else if (currentDayFive === "Snow") {
-          $("#dayFiveIcon").append("<i></i>").addClass('fas fa-sun');
+          $("#dayFiveIcon").append("<i></i>").addClass('fas fa-snowflake');
         }
         else if (currentDayFive === "Thunderstorm") {
           $("#dayFiveIcon").append("<i></i>").addClass('fas fa-bolt');
