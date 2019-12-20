@@ -14,7 +14,7 @@ $(document).ready(function() {
       $("#currentCity" ).text(userCity);
       $.ajax({
         url:
-          "http://api.openweathermap.org/data/2.5/weather?q=" + userCity + "&units=imperial&appid=c0364544656115d0bb71b2442947f757"
+          "https://api.openweathermap.org/data/2.5/weather?q=" + userCity + "&units=imperial&appid=c0364544656115d0bb71b2442947f757"
       }).done(function(html) {
         var currentWeather = html.weather[0].main 
         if (currentWeather === "Clouds") {
@@ -41,14 +41,14 @@ $(document).ready(function() {
         var lon = html.coord.lon;
         $.ajax({
           url:
-            "http://api.openweathermap.org/data/2.5/uvi?&appid=c0364544656115d0bb71b2442947f757&lat=" + lat + "&lon=" + lon
+            "https://api.openweathermap.org/data/2.5/uvi?&appid=c0364544656115d0bb71b2442947f757&lat=" + lat + "&lon=" + lon
         }).done(function(html) {
           $("#currentUV").text(html.value);
         });
       });
       $.ajax({
         url:
-          "http://api.openweathermap.org/data/2.5/forecast?&appid=c0364544656115d0bb71b2442947f757&q=" + userCity + "&units=imperial&mode=JSON"
+          "https://api.openweathermap.org/data/2.5/forecast?&appid=c0364544656115d0bb71b2442947f757&q=" + userCity + "&units=imperial&mode=JSON"
       }).done(function(html) {
         var currentDayOne = html.list[4].weather[0].main
         var currentDayTwo = html.list[12].weather[0].main
